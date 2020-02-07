@@ -7,8 +7,8 @@ module YouCanBookMe
     module Bookings
       include YouCanBookMe::Connection::API
 
-      def all_bookings(params = {})
-        get("/bookings", params)
+      def index(params = {})
+        get('/bookings', params)
       end
     end
   end
