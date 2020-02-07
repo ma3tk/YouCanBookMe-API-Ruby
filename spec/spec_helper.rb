@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'lib/YouCanBookMe/API/ruby'
+require 'lib/YouCanBookMe/API/youcanbookme'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

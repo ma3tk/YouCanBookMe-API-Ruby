@@ -1,8 +1,12 @@
-require_relative 'lib/YouCanBookMe/API/Ruby/version'
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'YouCanBookMe/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'YouCanBookMe-API-Ruby'
-  spec.version       = YouCanBookMe::API::Ruby::VERSION
+  spec.version       = YouCanBookMe::VERSION
   spec.authors       = ['ma3tk']
   spec.email         = ['masataka0227@gmail.com']
 
@@ -25,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'http', '~> 3.0'
+  spec.add_dependency 'http', '~> 4.0'
   spec.add_development_dependency 'bundler', '~> 2.1.4'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
