@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    YouCanBookMe-API-Ruby (0.0.1)
+    YouCanBookMe-API-Ruby (0.0.2)
       http (~> 4.0)
 
 GEM
