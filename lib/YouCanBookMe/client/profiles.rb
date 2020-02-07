@@ -7,8 +7,24 @@ module YouCanBookMe
     module Profiles
       include YouCanBookMe::Connection::API
 
-      def profiles(params = {})
-        get("/profiles", params)
+      def index(params = {})
+        get('/profiles', params)
+      end
+
+      def create(params = {})
+        post('/profiles', params)
+      end
+
+      def show(profile_id, params = {})
+        get("/profiles/#{profile_id}", params)
+      end
+
+      def update(profile_id, params = {})
+        patch("/profiles/#{profile_id}", params)
+      end
+
+      def destroy(profile_id, params = {})
+        delete("/profiles/#{profile_id}", params)
       end
     end
   end

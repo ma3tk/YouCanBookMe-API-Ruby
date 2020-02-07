@@ -11,7 +11,7 @@ module YouCanBookMe
         params = {
           fields: 'apiKey'
         }
-        get("/", params).parse['apiKey']
+        get('/', params).parse['apiKey']
       end
 
       def set_api_key

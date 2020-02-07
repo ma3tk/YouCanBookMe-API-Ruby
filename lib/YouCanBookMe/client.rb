@@ -12,7 +12,7 @@ module YouCanBookMe
       email = options[:email] || ENV['YOUCANBOOKME_EMAIL']
       password = options[:password] || ENV['YOUCANBOOKME_PASSWORD']
 
-      raise YouCanBookMe::AuthorizationNotSpecified if (email.empty? || password.empty?)
+      raise YouCanBookMe::AuthorizationNotSpecified if email.empty? || password.empty?
 
       YouCanBookMe.instance_variable_set(:@email, email)
       YouCanBookMe.instance_variable_set(:@password, password)
