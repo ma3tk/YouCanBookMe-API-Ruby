@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    YouCanBookMe-API-Ruby (0.0.2)
+    youcanbookme-api-ruby (0.0.2)
       http (~> 4.0)
 
 GEM
@@ -66,11 +66,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  YouCanBookMe-API-Ruby!
   bundler (~> 2.1.4)
   rake (~> 12.0)
   rspec (~> 3.0)
   rubocop (~> 0.62.0)
+  youcanbookme-api-ruby!
 
 BUNDLED WITH
    2.1.4
