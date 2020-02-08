@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'YouCanBookMe/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'YouCanBookMe-API-Ruby'
+  spec.name          = 'youcanbookme-api-ruby'
   spec.version       = YouCanBookMe::VERSION
   spec.authors       = ['ma3tk']
   spec.email         = ['masataka0227@gmail.com']
