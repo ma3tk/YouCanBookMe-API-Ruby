@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require 'YouCanBookMe/connection'
+require 'YouCanBookMe/connection/api'
 
 module YouCanBookMe
   class Client
     module Bookings
       include YouCanBookMe::Connection::API
 
-      def index(params = {})
+      def all_bookings(params = {})
         get('/bookings', params)
       end
     end

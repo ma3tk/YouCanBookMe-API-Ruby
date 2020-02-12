@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 require 'YouCanBookMe/client/profiles'
+require 'YouCanBookMe/client/profiles/bookings'
 require 'YouCanBookMe/client/bookings'
 
 module YouCanBookMe
   class Client
     include YouCanBookMe::Client::Profiles
+    include YouCanBookMe::Client::Profiles::Bookings
     include YouCanBookMe::Client::Bookings
 
     def initialize(options = {})

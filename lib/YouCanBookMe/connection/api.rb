@@ -2,7 +2,6 @@
 
 require 'http'
 require 'YouCanBookMe/Client/Error'
-require 'YouCanBookMe'
 
 module YouCanBookMe
   module Connection

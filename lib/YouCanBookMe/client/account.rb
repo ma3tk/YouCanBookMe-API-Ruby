@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require 'YouCanBookMe/connection'
+require 'YouCanBookMe/connection/api'
 
 module YouCanBookMe
   class Client
     module Account
       include YouCanBookMe::Connection::API
 
-      def show(params = {})
+      def account(params = {})
         get('', params)
       end
 
-      def update(params = {})
+      def update_account(params = {})
         patch('', params)
       end
 
-      def destroy(params = {})
+      def destroy_account(params = {})
         delete('', params)
       end
     end
